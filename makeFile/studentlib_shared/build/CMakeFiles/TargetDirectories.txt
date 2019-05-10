@@ -1,0 +1,7 @@
+/home/thucnh/CPP/studentlib_shared/build/CMakeFiles/install/strip.dir
+/home/thucnh/CPP/studentlib_shared/build/CMakeFiles/install/local.dir
+/home/thucnh/CPP/studentlib_shared/build/CMakeFiles/testStudent.dir
+/home/thucnh/CPP/studentlib_shared/build/CMakeFiles/edit_cache.dir
+/home/thucnh/CPP/studentlib_shared/build/CMakeFiles/rebuild_cache.dir
+/home/thucnh/CPP/studentlib_shared/build/CMakeFiles/install.dir
+/home/thucnh/CPP/studentlib_shared/build/CMakeFiles/list_install_components.dir
