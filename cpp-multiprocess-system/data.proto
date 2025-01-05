@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message SensorData {
+    int32 id = 1;
+    string type = 2;
+    float value = 3;
+    string timestamp = 4;
+}

@@ -1,0 +1,28 @@
+mkdir build && cd build
+cmake ..
+make
+
+# Chạy hệ thống
+cd scripts
+./run_all.sh
+
+# test
+ctest --output-on-failure
+
+# 
+rm -rf build
+mkdir build && cd build
+# cmake -B build -DCMAKE_BUILD_TYPE=Release
+cmake -DUSE_SYSTEM_LIBS=OFF -DENABLE_TESTS=OFF ..
+cmake --build build -- -j$(nproc)
+
+#
+rm -rf build && mkdir build && cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DUSE_SYSTEM_LIBS=OFF -DENABLE_TESTS=OFF && cmake --build build -- -j5
+
+# build & run test
+mkdir build && cmake -S . -B build -DUSE_SYSTEM_LIBS=OFF -DENABLE_TESTS=ON && cmake --build build && cd build && ctest
+
+# build & install 
+mkdir build && cmake -S . -B build -DUSE_SYSTEM_LIBS=OFF -DENABLE_TESTS=OFF && cmake --build build --target install
+
+
